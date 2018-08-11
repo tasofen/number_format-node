@@ -31,7 +31,7 @@
         nodes[1] = roundDecimal(nodes[1], decimals);
 
         if (nodes[1].length > decimals) {
-            nodes[0] = parseInt(nodes[0])+1;
+            // nodes[0] = parseInt(nodes[0])+1;
             nodes[1] = nodes[1].substr(1);
         }
 
