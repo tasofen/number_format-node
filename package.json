@@ -1,7 +1,7 @@
 {
   "name": "number_format-php",
   "version": "1.0.0",
-  "description": "Analog PHP function string number_format ( float $number , int $decimals = 0 , string $dec_point = '.' , string $thousands_sep = ',' )",
+  "description": "Ported PHP function "number_format" in JavsScript",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tasofen/number_format-node.git"
