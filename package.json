@@ -1,7 +1,7 @@
 {
   "name": "number_format-php",
   "version": "1.0.0",
-  "description": "Ported PHP function "number_format" in JavsScript",
+  "description": "Ported PHP function 'number_format' in JavsScript",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tasofen/number_format-node.git"
