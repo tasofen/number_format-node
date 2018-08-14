@@ -2,15 +2,15 @@
 $arr = [];
 
 for($i=0; $i<5000; $i++) {
-	$h = rand(0, 1234567890);
-	$l = rand(0, 1234567890);
-	$d = (double)($h.'.'.$l);
+    $h = rand(0, 1234567890);
+    $l = rand(0, 1234567890);
+    $d = (double)($h.'.'.$l);
 
-	$arr[] = $h;
-	$arr[] = $h*-1;
-	
-	$arr[] = $d;
-	$arr[] = $d*-1;
+    $arr[] = $h;
+    $arr[] = $h*-1;
+    
+    $arr[] = $d;
+    $arr[] = $d*-1;
 }
 
 $filePath = __DIR__.'/data.json';

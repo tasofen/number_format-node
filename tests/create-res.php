@@ -9,11 +9,11 @@ $res = [];
 
 
 foreach ($arr as $item) {
-	for ($i=0; $i<6; $i++) {
-		$res[] = number_format($item);
-		$res[] = number_format($item, $i);
-		$res[] = number_format($item, $i, ',', ' ');
-	}
+    for ($i=0; $i<7; $i++) {
+        $res[] = number_format($item);
+        $res[] = number_format($item, $i);
+        $res[] = number_format($item, $i, ',', ' ');
+    }
 }
 
 $json = json_encode($res);

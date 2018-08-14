@@ -7,12 +7,20 @@
     "url": "git+https://github.com/tasofen/number_format-node.git"
   },
   "keywords": [
-    "number_format"
+    "number_format",
+    "number",
+    "format",
+    "price"
   ],
   "author": "Tikhonov Aleksandr",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tasofen/number_format-node/issues"
   },
-  "homepage": "https://github.com/tasofen/number_format-node#readme"
+  "homepage": "https://github.com/tasofen/number_format-node#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.4.0"
+  }
 }
