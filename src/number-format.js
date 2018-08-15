@@ -43,8 +43,6 @@
 
         nodes[0] = thousands(nodes[0], thousands_sep);
 
-
-
         if (decimals) {
             result = nodes.join(dec_point);
         } else {
@@ -55,7 +53,7 @@
             result = neg + result;
         }
 
-        return result
+        return result;
     }
 
     function thousands(num, del) {
