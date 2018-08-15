@@ -1,6 +1,6 @@
 {
   "name": "number_format-php",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Ported PHP function 'number_format' in JavsScript",
   "repository": {
     "type": "git",
