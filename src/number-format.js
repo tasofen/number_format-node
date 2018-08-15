@@ -21,7 +21,8 @@
             number = parseFloat(number);
         }
 
-        var neg = number<0 ? "-" : "";
+        var neg = number<0 ? "-" : "",
+        resutl = "";
         number = Math.abs(number);
 
         if (decimals == 0) {
@@ -42,12 +43,19 @@
 
         nodes[0] = thousands(nodes[0], thousands_sep);
 
+
+
         if (decimals) {
-            return neg + nodes.join(dec_point);
+            result = nodes.join(dec_point);
         } else {
-            return neg + nodes[0];
+            result = nodes[0];
         }
 
+        if (neg && result.replace(/(0|\.)/g,"").length>0) {
+            result = neg + result;
+        }
+
+        return result
     }
 
     function thousands(num, del) {
