@@ -1,2 +1,4 @@
 language: php node_js
+php:
+  - "7.0"
 script: cd tests && ./run.sh
