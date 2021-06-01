@@ -1,4 +1,9 @@
 language: php node_js
 php:
+  - "5.6"
   - "7.0"
+  - "7.1"
+  - "7.2"
+  - "7.3"
+  - "7.4"
 script: cd tests && ./run.sh
