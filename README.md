@@ -1,5 +1,5 @@
 ## Ported PHP function "number_format" in JavaScript 
-[![Build Status](https://travis-ci.org/tasofen/number_format-node.svg?branch=master)](https://travis-ci.org/tasofen/number_format-node)
+[![Build Status](https://api.travis-ci.com/tasofen/number_format-node.svg?branch=master)](https://travis-ci.org/tasofen/number_format-node)
 
 [![npm](https://img.shields.io/npm/dt/number_format-php.svg)](https://www.npmjs.com/package/number_format-php)
 [![npm](https://img.shields.io/npm/dy/number_format-php)](https://www.npmjs.com/package/number_format-php)
@@ -31,4 +31,3 @@ requirejs(["helper/number_format"], function(number_format) {
   number_format(1234567.125, 2, ".", " "); // 1 234 567.13
 });
 ```
-
