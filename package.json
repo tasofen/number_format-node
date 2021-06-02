@@ -1,10 +1,14 @@
 {
   "name": "number_format-php",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Ported PHP function 'number_format' in JavsScript",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tasofen/number_format-node.git"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js",
+    "build": "grunt"
   },
   "keywords": [
     "number_format",
@@ -21,6 +25,7 @@
   "devDependencies": {
     "grunt": "^1.0.3",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-uglify": "^3.4.0"
+    "grunt-contrib-uglify": "^3.4.0",
+    "mocha": "^8.4.0"
   }
 }

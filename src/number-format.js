@@ -22,11 +22,17 @@
         }
 
         var neg = number<0 ? "-" : "",
-        resutl = "";
+        result = "";
         number = Math.abs(number);
 
         if (decimals == 0) {
-            return neg+thousands(Math.round(number), thousands_sep);
+            result = thousands(Math.round(number), thousands_sep);
+
+            if (neg && result.replace(/[0.]/g, "").length>0) {
+                return neg + result;
+            } else {
+                return result;
+            }
         }
 
         var nodes = (""+number).split(".");
@@ -49,7 +55,7 @@
             result = nodes[0];
         }
 
-        if (neg && result.replace(/(0|\.)/g,"").length>0) {
+        if (neg && (result.replace(/[0.]/g, "").length>0) ) {
             result = neg + result;
         }
 
