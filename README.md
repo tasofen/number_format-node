@@ -31,3 +31,4 @@ requirejs(["helper/number_format"], function(number_format) {
   number_format(1234567.125, 2, ".", " "); // 1 234 567.13
 });
 ```
+
