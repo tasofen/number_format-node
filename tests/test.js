@@ -35,4 +35,8 @@ describe('number_format', function() {
     assert.strictEqual(number_format(-0.00005, 2), "0.00");
     assert.strictEqual(number_format(-0.00005), "0");
   });
+
+  it('Empty thousands separate', function() {
+    assert.strictEqual(number_format(123456.1234, 2, '.', ''), "123456.12");
+  });
 });

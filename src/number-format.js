@@ -15,7 +15,10 @@
     return function (number, decimals, dec_point, thousands_sep) {
         decimals = decimals || 0;
         dec_point = dec_point || ".";
-        thousands_sep = thousands_sep || ",";
+
+        if (thousands_sep !== '') {
+            thousands_sep = thousands_sep || ",";
+        }
 
         if (typeof number !== "number") {
             number = parseFloat(number);
